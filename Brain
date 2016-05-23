@@ -1,0 +1,31 @@
+package brain;
+
+public class brain {
+
+	public void SuhDude() {
+		
+	}
+	
+	public void damage() {
+		
+	}
+	
+	public void fight() {
+		
+	}
+	
+	public void stats() {
+		
+	}
+	
+	public void characterSelectionMaybe() {
+		
+	}
+	
+	public void menuSelection() {
+		
+	}
+	
+	
+	
+}
