@@ -1,0 +1,24 @@
+package com.neumont.csc150.Arenas;
+import java.awt.*;
+import javax.swing.*;
+
+public class Arena extends JFrame{
+	private JLabel lbl;
+	private ImageIcon image;
+	
+	public void GuiImage(){
+		setLayout(new FlowLayout());
+		image = new ImageIcon (getClass().getResource("imageArena1.jpg"));
+		lbl = new JLabel(image);
+		add(lbl);
+	}
+	
+	public static void main(String[] args){
+		Arena a = new Arena();
+		a.setTitle("Testing");
+		a.setVisible(true);
+		a.pack();
+		a.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
