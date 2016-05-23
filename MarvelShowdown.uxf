@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>170</y>
+      <w>290</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>com.neumont.csc150.controller : Brain
+--
+- p1Damage : int
+- p2Damage : int
+- p1Health : int
+- p2Health : int
+--
++ turnBased() : void
++ damage() : void
++ fight() : void
++ stats() : void
++ characterSelection() : void
++ menuSelection() : void
++ hit() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>450</y>
+      <w>490</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes>com.neumont.csc150.view : GUIMain
+--
+- pageDownKey : boolean, pageUpKey : boolean
+- qKey : boolean, eKey : boolean
+- p1DistanceFromLeftSide : int, p1DistanceFromRightSide : int
+- p1DistanceFromTop : int
+- p2DistanceFromLeftSide : int, p2DistanceFromRightSide : int
+- p2DistanceFromTop : int
+- characterMovement : int
+- characterUpAndDown : int
+- p1Health : int, p2Health : int
+--
++ GUIMain()
++ drawPlayer1(g : Graphics) : void
++ drawPlayer2(g : Graphics) : void
++ paintComponent (g : Graphics) : void
++ playerOneActions() : void
++ playerTwoActions() : void
++ playerOneHealth() : int
++ playerTwoHealth() : int
++ keyPressed (e : KeyEvent) : void
++ keyReleased (e : KeyEvent) : void
++ keyTyped (e : KeyEvent) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>80</y>
+      <w>340</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>com.neumont.csc150.view : GUICharacter
+--
+- name : String
+- 
+--
++ GUICharacter()
++ deadpool() : void
++ domino() : void
++ capAmerica() : void
++ ironMan() : void
++ wolverine() : void
++ magneto() : void
++ spiderMan() : void
++ venom() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>550</y>
+      <w>290</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>com.neumont.csc150.model : Player
+--
+- name : String
+--
++ getName() : String
++ setName(name : String) : void
++ equals(obj : Object) : boolean
++ toString() : String
++ Player()
++ Player(name : String)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1110</x>
+      <y>490</y>
+      <w>290</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>com.neumont.csc150.view : GUIArena
+--
+- lb1 : JLabel
+- image : ImageIcon
+--
++ GuiImage() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>30</y>
+      <w>540</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0;520.0;10.0;520.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>120</y>
+      <w>370</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0;350.0;10.0;350.0;330.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>400</y>
+      <w>320</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0;300.0;10.0;300.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>190</x>
+      <y>440</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>80</y>
+      <w>340</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>com.neumont.csc150.view : GUIWindow
+--
+- frame : JFrame
+- mainPanel : JPanel
+- picture : JLabel
+- showTitleScreen : boolean
+- playing : boolean
+--
++ populateFrame(frame : JFrame) : void
++ GUI()
++ keyPressed(e : KeyEvent) : void
++ keyReleased(e : KeyEvent) : void
++ keyTyped(arg0 : KeyEvent) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
